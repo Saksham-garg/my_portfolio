@@ -39,6 +39,21 @@
 
   list-style: none;
 
+  .resume-link a {
+    background-color: var(--secondary-color);
+    border-radius: .75rem;
+    color: #fff;
+    line-height: 1;
+    padding: .5rem .75rem;
+
+    &:hover{
+      background-color: #fff;
+      border-color: var(--secondary-color);
+      outline: 2px solid;
+      box-sizing: border-box;
+    }
+  }
+  
   li {
     margin: 0 1rem;
     cursor: pointer;
@@ -123,6 +138,21 @@
 
     /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+    .resume-link a {
+      background-color: var(--secondary-color);
+      border-radius: .75rem;
+      color: #fff;
+      line-height: 1;
+      padding: .5rem .75rem;
+
+      &:hover{
+        background-color: #fff;
+        border-color: var(--secondary-color);
+        outline: 2px solid;
+        box-sizing: border-box;
+      }
+    }
 
     svg {
       width: 35px;

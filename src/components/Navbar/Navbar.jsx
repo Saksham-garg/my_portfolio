@@ -20,6 +20,16 @@ const Navbar = () => {
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
+        <li className="resume-link app__flex p-text">
+          <div />
+          <a
+            href="https://sakshamgarg.tech/Saksham_Garg_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
 
       <div className="app__navbar-menu">
@@ -39,6 +49,15 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li className="resume-link">
+                <a
+                  href="https://sakshamgarg.tech/Saksham_Garg_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
