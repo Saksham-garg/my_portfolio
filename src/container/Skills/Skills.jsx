@@ -17,7 +17,6 @@ const Skills = () => {
 
     client.fetch(query).then((data) => {
       setExperiences(data);
-      console.log(data)
     });
 
     client.fetch(skillsQuery).then((data) => {
@@ -52,7 +51,7 @@ const Skills = () => {
           {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
-              key={experience.year} 
+              key={experience.year}
             >
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
@@ -76,7 +75,7 @@ const Skills = () => {
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
-                      data-tooltip-id="my-tooltip"  
+                      data-tooltip-id="my-tooltip"
                       data-tooltip-content={work.desc}
                     >
                       {work.desc}
