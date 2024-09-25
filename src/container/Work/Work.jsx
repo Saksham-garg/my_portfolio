@@ -17,7 +17,11 @@ const Work = () => {
 
     client.fetch(query).then((data) => {
       setWorks(data);
-      setFilterWork(data);
+      if (activeFilter === 'All') {
+        setFilterWork(data);
+      } else {
+        setFilterWork(data.filter((work) => work.tags.includes(activeFilter)));
+      }
     });
   }, []);
 
